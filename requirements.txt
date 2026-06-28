@@ -1,0 +1,31 @@
+# PyQt6 - UI Framework
+PyQt6>=6.7,<7
+
+# Audio Processing
+librosa>=0.10,<0.12
+sounddevice>=0.4.6,<0.6
+soundfile>=0.12,<0.14
+mutagen>=1.47,<2
+
+# AI Model - Demucs for stem separation
+torch>=2.2
+torchaudio>=2.2
+demucs==4.0.1
+
+# Utilities
+numpy>=1.24
+Pillow>=10
+scipy>=1.13
+
+# For packaging
+pyinstaller>=6.4
+pyinstaller-hooks-contrib>=2024.1
+
+# Development & logging
+python-dotenv>=1.0
+
+# Optional AI lyrics/chords analysis
+openai>=2.0
+
+# Local automatic lyric transcription
+faster-whisper>=1.0
