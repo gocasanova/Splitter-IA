@@ -2,6 +2,8 @@
 import sys
 from pathlib import Path
 
+ICON_PATH = str(Path('assets/app_icon.icns').resolve())
+
 a = Analysis(
     ['main.py'],
     pathex=[],
@@ -55,16 +57,18 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=None,
+    icon=ICON_PATH,
 )
 
 app = BUNDLE(
     exe,
     name='AIStemSeparator.app',
-    icon=None,
+    icon=ICON_PATH,
     bundle_identifier='com.ai.stemseparator',
     info_plist={
         'NSPrincipalClass': 'NSApplication',
         'NSHighResolutionCapable': True,
+        'CFBundleShortVersionString': '1.1.0',
+        'CFBundleVersion': '1.1.0',
     },
 )

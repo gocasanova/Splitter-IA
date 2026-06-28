@@ -4,6 +4,8 @@ A professional macOS desktop application for musicians to load audio files, sepa
 
 **Current version: 1.1.0**
 
+![AI Band Practice Tool icon](assets/app_icon.png)
+
 **Features:**
 - ✅ Load audio files (WAV, MP3, FLAC, OGG, M4A)
 - ✅ AI-powered stem separation (vocals, drums, bass, other)
