@@ -2,7 +2,7 @@
 
 A professional macOS desktop application for musicians to load audio files, separate them into instrument stems using AI, and perform real-time mixing with volume, mute, and solo controls.
 
-**Current version: 1.1.0**
+**Current version: 1.1.1**
 
 ![AI Band Practice Tool icon](assets/app_icon.png)
 
@@ -25,6 +25,11 @@ A professional macOS desktop application for musicians to load audio files, sepa
 - ✅ Optional AI lyric interpretation with OpenAI API
 - ✅ Dark theme UI optimized for musicians
 - ✅ Apple Silicon native support (M1/M2/M3)
+
+## What's New in 1.1.1
+
+- Fixed the macOS bundle so Demucs includes its remote model registry (`demucs/remote/files.txt`) and YAML definitions.
+- Restored stem separation in the standalone application without requiring a local Python installation.
 
 ## What's New in 1.1.0
 

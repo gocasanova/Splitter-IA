@@ -1,14 +1,16 @@
 # PyInstaller build specification for macOS
 import sys
 from pathlib import Path
+from PyInstaller.utils.hooks import collect_data_files
 
 ICON_PATH = str(Path('assets/app_icon.icns').resolve())
+DEMUCS_DATA = collect_data_files('demucs', includes=['remote/*'])
 
 a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=DEMUCS_DATA,
     hiddenimports=[
         'PyQt6',
         'torch',
@@ -68,7 +70,7 @@ app = BUNDLE(
     info_plist={
         'NSPrincipalClass': 'NSApplication',
         'NSHighResolutionCapable': True,
-        'CFBundleShortVersionString': '1.1.0',
-        'CFBundleVersion': '1.1.0',
+        'CFBundleShortVersionString': '1.1.1',
+        'CFBundleVersion': '1.1.1',
     },
 )

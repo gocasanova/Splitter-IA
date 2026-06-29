@@ -4,7 +4,7 @@ from pathlib import Path
 
 # App name
 APP_NAME = "AI Band Practice Tool"
-APP_VERSION = "1.1.0"
+APP_VERSION = "1.1.1"
 
 # Paths
 BASE_DIR = Path(__file__).resolve().parents[2]
